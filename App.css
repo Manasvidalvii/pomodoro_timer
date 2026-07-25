@@ -1,0 +1,110 @@
+/* 1. GLOBAL STYLES & RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+body {
+  background-color: #0f172a; /* Dark blue background */
+  color: #f8fafc;            /* Crisp readable light text */
+  min-height: 100vh;
+}
+
+/* 2. MAIN CONTAINER */
+.app-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  min-height: 100vh;
+}
+
+/* 3. HEADER SECTION */
+.app-header {
+  text-align: center;
+}
+
+.app-header h1 {
+  font-size: 2.5rem;
+  color: #38bdf8; /* Sky blue title */
+}
+
+.app-header p {
+  color: #94a3b8;
+  margin-top: 0.5rem;
+}
+
+/* 4. DASHBOARD & GRID LAYOUT */
+.app-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+/* 5. GLASSMORPHISM CARDS */
+.timer-card,
+.nature-mixer-card,
+.distraction-card {
+  background: rgba(30, 41, 59, 0.7); /* Translucent dark slate */
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3);
+}
+
+/* 6. CLOCK DISPLAY */
+.clock-display h1 {
+  font-size: 5rem;
+  font-weight: 800;
+  text-align: center;
+  color: #f1f5f9;
+  margin: 1.5rem 0;
+  font-variant-numeric: tabular-nums;
+}
+
+/* 7. BUTTON STYLES */
+button {
+  cursor: pointer;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.75rem 1.25rem;
+  font-weight: 600;
+  transition: all 0.2s ease-in-out;
+}
+
+.primary-btn {
+  background-color: #0284c7;
+  color: white;
+}
+
+.primary-btn:hover {
+  background-color: #0369a1;
+}
+
+.secondary-btn {
+  background-color: #334155;
+  color: #cbd5e1;
+}
+
+.secondary-btn:hover {
+  background-color: #475569;
+}
+
+/* 8. FOOTER */
+.app-footer {
+  margin-top: auto;
+  text-align: center;
+  color: #64748b;
+  font-size: 0.875rem;
+}
